@@ -1,5 +1,4 @@
 const about = document.querySelector('.about');
-const imgs = document.querySelectorAll('.image');
 const btns = document.querySelectorAll('.tab-btn');
 const contents = document.querySelectorAll('.content');
 
@@ -11,12 +10,11 @@ about.addEventListener('click', e => {
             btn.classList.remove('active');
             e.target.classList.add('active');
         });
-
         contents.forEach(content => {
             content.classList.remove('active');
             const article = document.getElementById(id);
             article.classList.add('active')
-        })
+        });
     }
     
     
